@@ -9,7 +9,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: harbor.eastasia.cloudapp.azure.com/lujin/helloword:${CICD_GIT_REPO_NAME}
+      tag: harbor.eastasia.cloudapp.azure.com/lujin/helloword:${CICD_GIT_COMMIT}
       pushRemote: true
       registry: harbor.eastasia.cloudapp.azure.com
 timeout: 60
