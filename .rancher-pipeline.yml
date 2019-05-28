@@ -11,7 +11,7 @@ stages:
       buildContext: .
       tag: harbor.eastasia.cloudapp.azure.com/lujin/helloword:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
-      registry: https://harbor.eastasia.cloudapp.azure.com
+      registry: harbor.eastasia.cloudapp.azure.com
 timeout: 60
 notification:
   recipients:
