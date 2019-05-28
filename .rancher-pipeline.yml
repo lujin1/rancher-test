@@ -9,13 +9,13 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: harbor.eastasia.cloudapp.azure.com/lujin/helloword:${CICD_EXECUTION_SEQUENCE}
+      tag: harbor.eastasia.cloudapp.azure.com/lujin/helloword:${CICD_GIT_TAG}
       pushRemote: true
       registry: harbor.eastasia.cloudapp.azure.com
 timeout: 60
 notification:
   recipients:
-  - recipient: xiaojin
+  - recipient: LuJin
     notifier: c-n5tmm:n-55zzt
   condition:
   - Success
