@@ -2,7 +2,7 @@ stages:
 - name: echo1
   steps:
   - runScriptConfig:
-      image: harbor.eastasia.cloudapp.azure.com/lujin/helloword:12
+      image: python:latest
       shellScript: echo "helloword"
 - name: build
   steps:
