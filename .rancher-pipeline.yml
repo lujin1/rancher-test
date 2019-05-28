@@ -2,7 +2,7 @@ stages:
 - name: echo1
   steps:
   - runScriptConfig:
-      image: python:latest
+      image: harbor.eastasia.cloudapp.azure.com/library/ubuntu:16.0.4
       shellScript: echo "helloword"
 timeout: 60
 notification: {}
